@@ -1,36 +1,44 @@
 <?php require_once('header' . config_item('template', 'template_extension')); ?>
-        
-        
 
 <!-- BEGIN #main -->
 <div id="main" class="container">
 
-    <!-- BEGIN .grid_12 -->
-    
-        <div class="col-md-8 col-xs-12 ">
-            <!-- Start slideshow-carousel -->
-            <div class="flexslider">
-                <ul class="slides">
-                    <li>
-                        <img src="<?php echo config_item('cart', 'site_url'); ?>uploads/images/carousel_1.jpg"  alt="" />
-                    </li>
-                    <li>
-                        <img src="<?php echo config_item('cart', 'site_url'); ?>uploads/images/carousel_2.jpg"  alt="" />
-                    </li>
-                    <li>
-                        <img src="<?php echo config_item('cart', 'site_url'); ?>uploads/images/carousel_3.jpg"  alt="" />
-                    </li>
-                    <li>
-                        <img src="assets/images/slides/slide-4.jpg"  alt="" />
-                    </li>
-                </ul><!--//slides-->
-            </div><!--//flexslider-->    
-            <!-- // end of slideshow-carousel -->
+    <div>
+        <!-- Start slideshow-carousel -->
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active" align="center">
+                    <img src="<?php echo config_item('template', 'site_url'); ?>templates/images/image1.jpg" alt="">
+                </div>
+                <div class="item" align="center">
+                    <img src="<?php echo config_item('template', 'site_url'); ?>templates/images/image2.jpg" alt="">
+                </div>
+                <div class="item" align="center">
+                    <img src="<?php echo config_item('template', 'site_url'); ?>templates/images/image3.jpg" alt="">
+                </div>
+            </div>
         </div>
-    
+
+        <!-- Controls -->
+        <!--<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>-->
+        <!-- // end of slideshow-carousel -->
+    </div>
+
     <br />
     <br />
-    <!-- END .grid_12 -->
 
     <div class="clear">
         &nbsp;

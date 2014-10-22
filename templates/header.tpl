@@ -12,38 +12,25 @@
 
         <link href="<?php echo config_item('template', 'site_url'); ?>templates/bootstrap-3.1.1-dist/css/bootstrap.min.css" rel="stylesheet" />
         <link href="<?php echo config_item('template', 'site_url'); ?>templates/font-awesome-4.0.3/css/font-awesome.min.css" rel="stylesheet" />
-        <link href="<?php echo config_item('template', 'site_url'); ?>templates/css/jquery.aw-showcase.stytle.css" rel="stylesheet" />
-        <link href="<?php echo config_item('template', 'site_url'); ?>templates/css/social.css" rel="stylesheet" />
+        <!--<link href="<?php echo config_item('template', 'site_url'); ?>templates/css/jquery.aw-showcase.stytle.css" rel="stylesheet" />
         <link href="<?php echo config_item('template', 'site_url'); ?>templates/css/theme.css" rel="stylesheet" />
-        <link href="<?php echo config_item('template', 'site_url'); ?>templates/css/sticky.min.css" rel="stylesheet" />
-        <link href="<?php echo config_item('template', 'site_url'); ?>templates/css/owl.theme.css" rel="stylesheet" />
-        <link href="<?php echo config_item('template', 'site_url'); ?>templates/css/owl.carousel.css" rel="stylesheet" />
-        <link href="<?php echo config_item('template', 'site_url'); ?>templates/css/flexslider.css" rel="stylesheet" />
+        <link href="<?php echo config_item('template', 'site_url'); ?>templates/css/sticky.min.css" rel="stylesheet" />-->
+        
 
         <!-- jQuery plugins -->
-        <script type="text/jav  ascript" src="<?php echo config_item('template', 'site_url'); ?>templates/js/jquery.validate.min.js"></script>
+        <!--<script type="text/javascript" src="<?php echo config_item('template', 'site_url'); ?>templates/js/jquery.validate.min.js"></script>
         <script type="text/javascript" src="<?php echo config_item('template', 'site_url'); ?>templates/js/jquery.qtip.min.js"></script>
         <script type="text/javascript" src="<?php echo config_item('template', 'site_url'); ?>templates/js/jquery.blockUI.js"></script>
         <script type="text/javascript" src="<?php echo config_item('template', 'site_url'); ?>templates/js/jquery.fancybox.js"></script>
-        <script type="text/javascript" src="<?php echo config_item('template', 'site_url'); ?>templates/js/jquery.cookie.js"></script>
-        <script type="text/javascript" src="<?php echo config_item('template', 'site_url'); ?>templates/js/jquery.flexslider-min.js"></script>
+        <script type="text/javascript" src="<?php echo config_item('template', 'site_url'); ?>templates/js/jquery.cookie.js"></script>-->
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 
         <!-- Custom js -->
         <script type="text/javascript" src="<?php echo config_item('template', 'site_url'); ?>templates/js/custom.min.js"></script>
         <script type="text/javascript" src="<?php echo config_item('template', 'site_url'); ?>templates/js/response.min.js"></script>
-        <script type="text/javascript" src="<?php echo config_item('template', 'site_url'); ?>templates/js/jquery-1.7.1.min.js"></script>
+        
         <script type="text/javascript" src="<?php echo config_item('template', 'site_url'); ?>templates/bootstrap-3.1.1-dist/js/bootstrap.min.js"></script>
         
-        <script type="text/javascript">
-        	$(window).load(function() {
-        		$('.flexslider').flexslider({
-        			animation : "slide",
-        			animationLoop : false,
-        			itemWidth : 210,
-        			itemMargin : 5
-        		});
-        	});
-        </script>
 
 
     </head>
