@@ -20,19 +20,13 @@ $config['table_coupons'] = 'coupons';
 $config['table_product_options'] = 'product_options';
 $config['table_product_option_values'] = 'product_option_values';
 
-$config['table_shipping_delivery_existing'] = 'shipping_delivery_existing';
-$config['table_shipping_delivery_new'] = 'shipping_delivery_new';
-$config['table_shipping_delivery_pickup'] = 'shipping_delivery_pickup';
-$config['table_shipping_status'] = 'shipping_status';
-$config['table_shipping_status_descriptions'] = 'shipping_status_descriptions';
+$config['site_title'] = 'Pack4u';
 
-$config['site_title'] = 'post4u';
+$config['site_url'] = 'http://pack4u.co.nz/';
 
-$config['site_url'] = 'http://localhost/post4u/example/';
+$config['absolute_path'] = '/home/a9314939/public_html/';
 
-$config['absolute_path'] = 'C:\xampp\htdocs\Post4U\example/';
-
-$config['admin_email'] = 'joobabo1@gmail.com';
+$config['admin_email'] = 'nzpack4u@gmail.com';
 
 $config['email_subject'] = 'Order received';
 
@@ -58,15 +52,15 @@ $config['cart_expire'] = 60 * 60 * 24;
 
 $config['paypal_email'] = 'joobabo1@gmail.com';
 
-$config['paypal_return'] = 'http://localhost/post4u/example/checkout_success.php';
+$config['paypal_return'] = 'http://pack4u.co.nz/checkout_success.php';
 
-$config['paypal_cancel_return'] = 'http://localhost/post4u/example/';
+$config['paypal_cancel_return'] = 'http://pack4u.co.nz/';
 
-$config['paypal_notify_url'] = 'http://localhost/post4u/example/payments/paypal/ipn.php';
+$config['paypal_notify_url'] = 'http://pack4u.co.nz/payments/paypal/ipn.php';
 
 $config['paypal_sandbox'] = 0;
 
-$config['log_path'] = 'C:\xampp\htdocs\Post4U\example/logs/';
+$config['log_path'] = '/home/a9314939/public_html/logs/';
 
 $config['new_order_notification'] = 1;
 

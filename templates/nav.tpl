@@ -23,13 +23,8 @@
 							
 								<li class="dropdown">
 									<a href="general.php" class="dropdown-toggle" data-toggle="dropdown">Shopping<b class="caret"></b></a>
-									<ul class="dropdown-menu">
-										<li><a href="general.php"></a><?php echo get_categories(0); ?></li>
-										<!--<li class="divider"></li>
-										<li><a href="#">Rental car</a></li>
-										<li><a href="#">Weather</a></li>
-										<li><a href="#">Transport</a></li>
-										<li><a href="#">Insurance</a></li>-->
+									<ul class="dropdown-menu" class="list-group" >
+										<li class="list-group-item"><a href="general.php"></a><?php echo get_categories(0); ?></li>
 									</ul>
 								</li>
 							

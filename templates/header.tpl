@@ -6,12 +6,13 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Title -->
-        <title>Post4u</title>
+        <title>Pack4u</title>
 
         <!-- Style sheet -->
 
         <link href="<?php echo config_item('template', 'site_url'); ?>templates/bootstrap-3.1.1-dist/css/bootstrap.min.css" rel="stylesheet" />
         <link href="<?php echo config_item('template', 'site_url'); ?>templates/font-awesome-4.0.3/css/font-awesome.min.css" rel="stylesheet" />
+        <link href="<?php echo config_item('template', 'site_url'); ?>templates/css/magnific-popup.css" rel="stylesheet" />
         <!--<link href="<?php echo config_item('template', 'site_url'); ?>templates/css/jquery.aw-showcase.stytle.css" rel="stylesheet" />
         <link href="<?php echo config_item('template', 'site_url'); ?>templates/css/theme.css" rel="stylesheet" />
         <link href="<?php echo config_item('template', 'site_url'); ?>templates/css/sticky.min.css" rel="stylesheet" />-->
@@ -30,6 +31,8 @@
         <script type="text/javascript" src="<?php echo config_item('template', 'site_url'); ?>templates/js/response.min.js"></script>
         
         <script type="text/javascript" src="<?php echo config_item('template', 'site_url'); ?>templates/bootstrap-3.1.1-dist/js/bootstrap.min.js"></script>
+
+        <script type="text/javascript" src="<?php echo config_item('template', 'site_url'); ?>templates/js/jquery.magnific-popup.js"></script>
         
 
 

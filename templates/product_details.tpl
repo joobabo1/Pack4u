@@ -1,19 +1,29 @@
 <?php require_once('header' . config_item('template', 'template_extension')); ?>
 
-<script type="text/javascript">
-// <![CDATA[
-$(document).ready(function() {
-				
-	//Fancybox
-	$("a.image").fancybox();
+<script>
+    $(document).ready(function() { 
+        $(".image1").magnificPopup({
+             type:'image',
+             mainClass: 'mfp-with-zoom', // this class is for CSS animation below
 
-	//Tabs
-	$('#tabs').tabs({ 
-		cookie: { expires: 30 } 
-	});
-				
-});
-// ]]>
+                zoom: {
+                    enabled: true, // By default it's false, so don't forget to enable it
+
+                    duration: 200, // duration of the effect, in milliseconds
+                    easing: 'ease-in-out', // CSS transition easing function 
+
+                    // The "opener" function should return the element from which popup will be zoomed in
+                    // and to which popup will be scaled down
+                    // By defailt it looks for an image tag:
+                    opener: function(openerElement) {
+                      // openerElement is the element on which popup was initialized, in this case its <a> tag
+                      // you don't need to add "opener" option if this code matches your needs, it's defailt one.
+                      return openerElement.is('img') ? openerElement : openerElement.find('img');
+                    }
+                }
+        });
+    });
+    
 </script>
 
 	<!-- BEGIN #main -->
@@ -35,22 +45,22 @@ $(document).ready(function() {
 		
 			<?php foreach ($cart->get_product($_GET['product_id']) as $value): ?>
 				
-				<div class="grid_12 loading product_details">
+				<div class="col-md-offset-2 col-md-8">
 
-					<div class="title_background">
+					<div class="page-header">
 						<h1><?php echo $value['product_name']; ?></h1>
 					</div>
 					
 					<div class="clear">&nbsp;</div>
 
-					<div class="grid_4 alpha">
+					<div class="col-md-offset-2 col-md-8">
 						
 						<?php if (is_null($value['product_image'])): ?>
 							<p><img src="<?php echo config_item('cart', 'site_url'); ?>uploads/images/no_image.png" alt="" /></p>
 						<?php else: ?>
 							<p>
-								<a href="<?php echo config_item('cart', 'site_url'); ?>uploads/images/<?php echo $value['product_image']; ?>" class="image" target="_blank" rel="product_id_<?php echo $_GET['product_id']; ?>">
-									<img src="<?php echo config_item('cart', 'site_url'); ?>uploads/images/<?php echo $value['product_thumbnail']; ?>" alt="" />
+								<a class="image1" href="<?php echo config_item('cart', 'site_url'); ?>uploads/images/<?php echo $value['product_image']; ?>" class="image" target="_blank" rel="product_id_<?php echo $_GET['product_id']; ?>">
+									<img class="img-responsive" src="<?php echo config_item('cart', 'site_url'); ?>uploads/images/<?php echo $value['product_thumbnail']; ?>" alt="" width="50%" />
 								</a>
 							</p>
 						<?php endif; ?>
@@ -60,11 +70,11 @@ $(document).ready(function() {
 					<div class="grid_8 omega">
 
 						<!-- BEGIN #tabs -->
-						<div id="tabs">
+						<div>
 						
-							<ul>
-								<li><a href="#tab-1">Information</a></li>
-								<li><a href="#tab-2">Description</a></li>
+							<ul class="nav nav-tabs">
+								<li role="presentation" class="active"><a href="#tab-1">Information</a></li>
+								<li role="presentation" class="aaa"><a href="#tab-2">Description</a></li>
 								<?php if (count($cart->get_product_images($_GET['product_id'])) > 0): ?>
 									<li><a href="#tab-3">Gallery</a></li>
 								<?php endif; ?>
@@ -107,7 +117,7 @@ $(document).ready(function() {
 									<?php endforeach; ?>
 									
 									<p>
-										<button type="submit" name="add_product" class="button orange">Add to cart</button>
+										<button type="submit" name="add_product" class="btn btn-primary">Add to cart</button>
 									</p>
 									
 								</form>
